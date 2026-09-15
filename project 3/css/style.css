@@ -1,0 +1,35 @@
+header{
+    background-color: blueviolet;
+    text-align: center; 
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+footer {
+    background-color: blanchedalmond;
+    padding: 30px 20px;
+}
+*{
+        margin: 0;
+        padding: 0;
+    }
+
+main{
+
+}
+
+
+#articles{
+    background-color: mediumseagreen;
+    padding: 20px;
+}
+#about{
+    background-color: orchid;
+    padding:  20px;
+    text-align: center;
+}
+p{
+    text-align: justify;
+}
+h2{
+    text-align: center;
+}
