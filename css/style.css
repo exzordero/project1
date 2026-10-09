@@ -59,3 +59,99 @@ dd{
 dt{
 
 }
+#center_img{
+    display: block;
+    margin: 0 auto;
+}
+img{
+    padding-bottom: 1rem;
+    border-radius: 1.5rem;
+    box-shadow: inset;
+    border: 1rem;
+    padding-top: 1rem;
+}
+figcaption{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+nav a:visited{
+    color:darkblue
+}
+h3{
+    font-size: 1.6rem;
+    text-align: center;
+}
+nav a:hover{
+    text-decoration: underline;
+    color: yellow;
+}
+nav a:focus{
+    color: green;
+    transform: scale(1.2);
+}
+nav a:active{
+    color: red;
+}
+nav a:link{
+    color: purple;
+}
+nav a{
+    color: purple;
+    text-decoration:none ;
+    display: inline-block;
+    transition: 0.5s;
+}
+#articles li:nth-child(odd){
+    background-color: aqua;
+}
+h2::after{
+    content: "ZXCZXCZXCZXCZXC";
+    font-size: 12px;
+    color: red;
+    margin-left: 10px;
+}.bi-virus{
+    color: red;
+    font-size: 30px;
+}
+#articles a::after{
+    content:"\F7CF";
+    font-family: bootstarp-icons;
+    color:blue;
+}
+/*------Верстка------*/
+.form-reg{
+    width: 20rem;
+    margin:1rem auto;
+    background-color: cornflowerblue;
+    border-radius: 1.2rem;
+    padding: 2rem;
+}
+input{
+    background-color: beige;
+    border: darkblue 0.1rem solid;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    color:crimson;
+}
+
+input[type=submit]{
+    background-color: black;
+    color: chartreuse;
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 0.4rem;
+}
+
+input[type="submit"]:hover{
+    background-color: black;
+    cursor: pointer;
+}
+input[type=checkbox],
+input[type=radio]{
+    accent-color: red;
+}
+select{
+    width: 8.5rem;
+}
+textarea{}
