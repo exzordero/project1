@@ -81,14 +81,7 @@ h3{
     font-size: 1.6rem;
     text-align: center;
 }
-nav a:hover{
-    text-decoration: underline;
-    color: yellow;
-}
-nav a:focus{
-    color: green;
-    transform: scale(1.2);
-}
+
 nav a:active{
     color: red;
 }
@@ -147,11 +140,52 @@ input[type="submit"]:hover{
     background-color: black;
     cursor: pointer;
 }
+
 input[type=checkbox],
 input[type=radio]{
     accent-color: red;
 }
+
 select{
     width: 8.5rem;
 }
+
 textarea{}
+
+#articles a{
+    text-decoration:none ;
+    display: inline-block;
+    transition: 0.5s;
+}
+#articles a:focus{
+    color: yellow;
+    transform: scale(1.5);
+}
+#articles a:hover{
+    text-decoration: underline;
+    color: crimson;
+}
+nav a:hover{
+    text-decoration: underline;
+    color: yellow;
+}
+nav a:focus{
+    color: green;
+    transform: scale(1.2);
+}
+a:focus{
+    color:yellowgreen;
+}
+a:hover{
+    color: white;
+}
+.important::before{
+    content: "ВАЖНО! ";
+    margin-right: 0.9rem;
+    color: red;
+    font-size: 1.4rem;
+    background-color: black;
+}
+p::first-line{
+    letter-spacing: 0.35rem;
+}
