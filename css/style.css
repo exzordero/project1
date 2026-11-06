@@ -154,7 +154,7 @@ h2::after{
     padding: 0.6rem 1.2rem;
     border: 4px solid #3b0a6b;
     cursor: pointer;
-    transition: 0.3s;
+
 }
 
 #contact-form input[type="submit"]:hover{
