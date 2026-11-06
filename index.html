@@ -2,8 +2,17 @@
 <html lang="ru">
 <body>
 <head>
+    <meta property="og:title" content="Джеймс Гослинг">
+    <meta property="og:site_name" content="Сайт ">
+    <meta property="og:url" content="https://site.ru">
+    <meta property="og:description" content="Сайт небольшой компании, которая занимается …">
+    <meta property="og:image" content="https://site.ru/img/share.jpg">
+
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="сайт верстальщика">
+    <meta name="description" content="сайт, где размещена информация">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="icon" href="image/java_original_wordmark_logo_icon_146459.svg" type="image/x-icon" />
+    <link rel="icon" type="image/ico" sizes="32x32" href="image/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HIDDEN KING NEEDS YOU</title>
@@ -24,7 +33,7 @@
                     <a href="#articles">Информация</a>
                 </li>
                 <li>
-                    <a href="#registration">Регистрация</a>
+                    <a href="#contact">Обратная связь</a>
                 </li>
             </ul>
         </nav> 
@@ -58,26 +67,38 @@
         <li><a href="facts.html">Факты</a></li>
     </ol>
     </section> 
-    <section id="registration">
-        <h2>Регистрация</h2>
-        <form class="form-reg" action="">
-            <label for="login">Введите логин</label><br>
-            <input type="text" id="login" name="login" placeholder="Логин" required><br>
-            <label for="pass">Введите пароль</label><br>
-            <input type="password" id="pass" name="password" placeholder="Пароль" required><br>
-            <label for="city">Выберите город</label>
-            <select name="city" id="city" required>
-                <option value="" disabled selected>Выберите город</option>
-                <option value="chel">Челябинск</option>
-                <option value="msk">Москва</option>
-                <option value="novosib">Новосибирск</option>
-            </select><br>
-            <label for="comment">Введите комментарий</label><br>
-            <textarea name="comment" id="comment" placeholder="Комментарий" rows="2" cols="20"></textarea><br>
-            <input type="checkbox" id="agreement" name="agreement">
-            <label for="agreement">Согласие на обработку персональных данных</label>
-            <input type="submit" value="Зарегистрироваться"><br>
-            <input type="reset">
+        <section id="contact">
+        <h2>Обратная связь</h2>
+        <form id="contact-form" action="">
+            <div class="form_item">
+                <label for="topic">Тема</label><br>
+                <select name="topic" id="topic" required>
+                    <option value="" disabled selected>Выберите тему</option>
+                    <option value="1">Заказать услугу</option>
+                    <option value="2">Оставить отзыв</option>
+                    <option value="3">Предложить сотрудничество</option>
+                    <option value="4">Другое</option>
+                </select>
+            </div>
+            <div class="form_item">
+                <label for="name">Имя</label><br>
+                <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+            </div>
+            <div class="form_item">
+                <label for="email">E-mail</label><br>
+                <input type="email" id="email" name="email" placeholder="you@mail.ru" required>
+            </div>            
+            <div class="form_item">
+                <label for="message">Текст сообщения</label><br>
+                <textarea id="message" name="message" placeholder="Ваше сообщение" rows="4" required></textarea>
+            </div>
+            <div class="form_item">
+                <input type="checkbox" id="agreement" name="agreement" required>
+                <label for="agreement">Согласие на обработку персональных данных</label>
+            </div>
+            <div class="form_item">
+                <input type="submit" value="Отправить">
+            </div>
         </form>
     </section>
 </main>
